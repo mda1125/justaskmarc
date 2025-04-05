@@ -21,10 +21,24 @@
             font-weight: 700; /* Bold */
             font-size: 3em; /* Adjust size as needed */
             color: #333; /* Optional: Dark grey color */
+            margin-bottom: 20px; /* Add some space below the text */
+        }
+        .content-container { /* New container style */
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items horizontally */
+            text-align: center; /* Center text within h1 */
+        }
+        img { /* Basic image styling */
+            max-width: 80%; /* Adjust max-width as needed */
+            height: auto; /* Maintain aspect ratio */
         }
     </style>
 </head>
 <body>
-    <h1>Coming Soon</h1>
+    <div class="content-container">
+        <h1>Coming Soon</h1>
+        <img src="images/coming_soon.png" alt="Coming Soon Graphic">
+    </div>
 </body>
 </html>
