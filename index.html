@@ -39,6 +39,14 @@
     <div class="content-container">
         <h1>JustAskMarc</h1>
         <img src="images/coming_soon.png" alt="Coming Soon Graphic">
+        <p id="datetime" style="margin-top: 15px; font-family: sans-serif; color: #555;"></p> <!-- Added paragraph for date/time -->
     </div>
+    <script>
+        const dateTimeElement = document.getElementById('datetime');
+        const now = new Date();
+        // Format the date and time. Example: "Friday, April 11, 2025 at 6:55:00 PM"
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+        dateTimeElement.textContent = `Last updated: ${now.toLocaleString(undefined, options)}`;
+    </script>
 </body>
 </html>
